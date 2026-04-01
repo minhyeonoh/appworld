@@ -1,0 +1,1 @@
+{"id": 1, "label": "Snapshot [root]", "action": "Snapshot", "status": "root", "children": [{"id": 2, "label": "Compound [PENDING]", "action": "Compound", "status": "PENDING", "children": []}, {"id": 3, "label": "ExploreApis [PENDING]", "action": "ExploreApis", "status": "PENDING", "children": []}]}

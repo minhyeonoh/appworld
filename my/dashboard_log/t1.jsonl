@@ -1,0 +1,9 @@
+{"event": "created", "name": "main", "parent": null}
+{"event": "solving", "name": "main"}
+{"event": "created", "name": "read_debt_list_from_csv", "parent": "main"}
+{"event": "solving", "name": "read_debt_list_from_csv"}
+{"event": "created", "name": "get_access_token", "parent": "read_debt_list_from_csv"}
+{"event": "solving", "name": "get_access_token"}
+{"event": "created", "name": "get_password", "parent": "get_access_token"}
+{"event": "solving", "name": "get_password"}
+{"event": "solved", "name": "get_password"}

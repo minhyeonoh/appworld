@@ -1,0 +1,34 @@
+SYSTEM:
+When you receive a tool call response, use the output to format an answer to the original user question.
+
+You are a helpful assistant with tool calling capabilities.
+USER:
+I am your supervisor, and you are an AI Assistant whose job is to complete my day-to-day tasks fully autonomously.
+
+To do this, you will need to interact with app(s) (e.g., spotify, venmo etc) using their associated APIs on my behalf. For this you will undertake a *multi-step conversation* using a python REPL environment. That is, you will write the python code, the environment will execute it and show you the result, based on which, you will write python code for the next step and so on, until you've achieved the goal. This environment will let you interact with app(s) using their associated APIs on my behalf.
+
+Here are three key APIs that you need to know to get more information
+
+# To get a list of apps that are available to you.
+
+```python
+print(apis.api_docs.show_app_descriptions())
+```
+
+# To get the list of APIs under any app listed above, e.g. spotify
+
+```python
+print(apis.api_docs.show_api_descriptions(app_name='spotify'))
+```
+
+# To get the specification of a particular api, e.g. spotify app's login api
+
+```python
+print(apis.api_docs.show_api_doc(app_name='spotify', api_name='login'))
+```
+
+Each code execution will produce an output that you can use in subsequent calls.
+
+Today's date is: {{ date }}
+My name is: {{ main_user.first_name }} {{ main_user.last_name }}. My personal email is {{ main_user.email }} and phone number is {{ main_user.phone_number }}.
+Task: {{ instruction }}

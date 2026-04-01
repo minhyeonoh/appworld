@@ -1,0 +1,12 @@
+/* xyflow theme files. Delete these to start from our base */
+
+.react-flow {
+  /* --xy-background-color: #f7f9fb; */
+  --xy-background-pattern-dots-color-default: rgba(0, 0, 0, 0);
+  /* --xy-controls-button-background-color-default: blue; */
+  /* --xy-controls-button-background-color-hover-default: yellow; */
+  /* --xy-controls-button-border-color-default: green; */
+  /* --xy-controls-box-shadow-default	0 0 2px 1px rgba(0, 0, 0, 0.08) */
+  /* --xy-resize-background-color-default	#3367d9 */
+  /* Custom Variables */
+}
